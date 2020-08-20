@@ -1,0 +1,363 @@
+* {
+    margin: 0;
+    font-family: "Poppins";
+}
+
+body {
+    background: linear-gradient(rgba(44, 43, 43, 0.274), rgba(14, 13, 13, 0.726)), url("../../Images/Chem-Background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    overflow-x: hidden;
+}
+
+.fullbody {
+    height: auto;
+}
+
+.navbar {
+    margin-top: 5px;
+    display: grid;
+    grid-template-columns: 20% 80%;
+}
+
+.navbar .logo {
+    float: left;
+}
+
+.logo a img {
+    margin-left: 30px;
+    width: 150px;
+}
+
+.links {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+}
+
+.indi_links {
+    text-align: center;
+    padding-top: 16%;
+    vertical-align: middle;
+}
+
+.indi_links a {
+    font-size: 130%;
+    font-weight: bold;
+    padding: 2%;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+.bottum_line {
+    background-color: yellow;
+    height: 3px;
+    width: 0%;
+    margin: auto;
+    transition: 0.2s;
+}
+
+#others {
+    color: yellow;
+}
+
+.indi_links a:hover {
+    color: yellow;
+}
+
+.stu_pages {
+    position: absolute;
+    top: 58px;
+    left: 63%;
+    background-color: wheat;
+    height: 0%;
+    display: none;
+    z-index: 2;
+    transition: 0.5s;
+}
+
+.stu_pages a,
+.font_btns a {
+    color: yellow;
+    text-decoration: none;
+}
+
+div>li {
+    list-style-type: none;
+}
+
+#downarrow,
+#downarrow2 {
+    color: yellow;
+    transition: 0.2s;
+}
+
+.font_btns {
+    position: absolute;
+    top: 58px;
+    right: 12%;
+    background-color: wheat;
+    height: 0%;
+    display: none;
+    z-index: 2;
+    transition: 0.5s;
+}
+
+#edited_by {
+    width: 15%;
+    color: yellow;
+    display: grid;
+    grid-template-columns: 73% 112%;
+    font-size: 177%;
+    padding-top: 3%;
+    text-align: left;
+    margin-left: 3%;
+    padding-bottom: 3%;
+}
+
+#me {
+    width: 233%;
+    height: 130%;
+    border-radius: 50%;
+    padding-right: 0%;
+}
+
+#name {
+    color: white;
+    font-size: 145%;
+}
+
+#txt {
+    font-size: 67%;
+    padding-top: 7%;
+    margin-left: -15%;
+}
+
+.footer {
+    top: 100%;
+    width: 100%;
+    height: auto;
+    background-color: rgba(58, 58, 53, 0.849);
+    text-align: right;
+}
+
+.footer h1 {
+    position: relative;
+    top: 20px;
+    right: 30px;
+    color: rgb(241, 241, 44);
+}
+
+#wdited #downarrow_menu1,
+#downarrow_menu2 {
+    display: none;
+}
+
+
+/*Article stuff stuff*/
+
+@font-face {
+    font-family: myFirstFont;
+    src: url(../blocktastic.otf);
+}
+
+#headbox {
+    text-align: center;
+}
+
+#lets_talk {
+    color: yellow;
+    font-family: "myFirstFont";
+    position: absolute;
+    top: 13%;
+    left: 4%;
+    font-size: 50px;
+}
+
+#heading {
+    letter-spacing: 37px;
+    font-family: "myFirstFont";
+    font-size: 200px;
+    margin: 2% 0% 6% 0%;
+    color: white;
+    left: 14%;
+    z-index: 1;
+}
+
+#trans_border {
+    background-color: #e8101000;
+    width: 73%;
+    position: absolute;
+    height: 153px;
+    top: 27%;
+    margin: auto;
+    border: 5px solid #c3d7e6;
+    left: 12%;
+    z-index: -1;
+}
+
+#p6headimg {
+    width: 100%;
+    height: auto;
+    filter: brightness(50%);
+}
+
+.contents {
+    background-color: rgba(19, 15, 41, 0.84);
+    margin: 3% 0 0 0;
+    padding: 10px;
+    grid-column-gap: 8px;
+    display: grid;
+    grid-template-columns: 18% 80%;
+}
+
+#side_bar {
+    background-color: rgba(29, 30, 70, 0.92);
+    line-height: 38px;
+    font-size: 16px;
+    padding: 7% 0% 0 1%;
+}
+
+#wiki {
+    padding: 2%;
+}
+
+.main_topic {
+    color: #fbaf3b;
+    margin-bottom: 1%;
+}
+
+.sub {
+    margin-top: 6%;
+}
+
+.subtopic {
+    color: #9e6918;
+    margin-bottom: -2%;
+}
+
+.fields {
+    color: yellow;
+}
+
+h3 {
+    color: rgb(255, 253, 253);
+    margin: 20px 0;
+    text-decoration: none;
+    font-weight: normal;
+}
+
+#sidebar_content,
+ul li {
+    list-style-type: none;
+}
+
+#sidebar_content li a {
+    text-decoration: none;
+    color: white;
+}
+
+#sidebar_content li a:hover {
+    color: #fbaf3b;
+}
+
+#looking {
+    font-family: "myFirstFont";
+    color: yellow;
+    font-size: 28px;
+    margin: -2% 0% 7% 7%;
+}
+
+dt,
+dd {
+    color: white;
+}
+
+
+/* footer */
+
+.inner_footer {
+    display: grid;
+    grid-template-columns: 25% 18% 32% 24%;
+    grid-gap: 20px;
+    padding: 20px 30px 20px 20px;
+    background-color: rgba(58, 58, 53, 0.849);
+    ;
+}
+
+#sitemap_list {
+    list-style-type: none;
+    color: white;
+}
+
+#sitemap_list li:hover {
+    color: yellow;
+}
+
+li a:hover {
+    color: yellow;
+}
+
+.contactus {
+    margin-right: 45px;
+}
+
+.contactus p {
+    text-align: center;
+}
+
+p a {
+    color: white;
+}
+
+.footer_headers {
+    color: yellow;
+    padding: 17px;
+}
+
+.aboutsite p {
+    text-align: center;
+    padding: 0px 25px 25px 25px;
+    font-size: 17px;
+    color: white;
+}
+
+#txt {
+    color: black;
+    margin-left: 118%;
+    font-size: 22px;
+}
+
+#name {
+    color: white;
+    font-size: 110%;
+}
+
+li a {
+    color: white;
+    text-decoration: none;
+    margin-left: 1em;
+}
+
+#sizeNum {
+    padding-left: 30%;
+    font-size: 145%;
+}
+
+
+/* font-size-changer */
+
+#range {
+    margin-left: 12%;
+    margin-top: 5%;
+}
+
+#displaySize {
+    margin-left: 43%;
+    margin-top: 1%;
+}
+
+#displaySize {
+    color: white;
+}

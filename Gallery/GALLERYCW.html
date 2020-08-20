@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Science | Gallery</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="navbar2.1.css" />
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  <link rel="icon" href="logomini.png" type="image/icon type" />
+  <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+</head>
+
+
+<body id="full_body">
+  <div class="fullbody">
+    <div class="navbar">
+      <div class="logo">
+        <a href="../Home/navbar2.1.html"><img src="logo2.2.png" alt="website logo" /></a>
+      </div>
+      <div class="links" id="links">
+        <div class="indi_links"><a href="../Products/Product.html">Products<div class="bottum_line"></div></a></div>
+        <div class="indi_links"><a href="../Reach Us/formupdatev2.0.html">Reach Us<div class="bottum_line"></div></a></div>
+        <div class="indi_links"><a href="../Quiz/new quiz 2.html">Quiz<div class="bottum_line"></div></a></div>
+        <div class="indi_links"><a href="../Site map/SitemapCW.html">Site Map<div class="bottum_line"></div></a></div>
+        <div class="indi_links" ><a href="#" onclick="showdown()" id="others">More&nbsp;&nbsp;<i class='fas fa-angle-down' id="downarrow"></i></a></div>
+        <div class="indi_links"><a href="../Gallery/GALLERYCW.html" id="colorYellow">Gallery<div class="bottum_line"></div></a></div>
+        <div class="indi_links"><a href="../About Us/srudent details 2.html">About Us<div class="bottum_line"></div></a></div>
+       </div>
+      </div>
+    </div>
+	
+    <!--Form used to change the changing colors because action attribute cannot be applied
+to other tags except form-->
+      <div id="content">
+        Change Page color:
+        <select name="colors" onchange="changeColor(this.value)">
+          <!--drop down list to change
+                background color-->
+          <option value="white">White</option>
+          <option value="black">Black</option>
+          <option value="orange">Orange</option>
+          <option value="green">Green</option>
+          <option value="blue">Blue</option>
+          <option value="skyblue">Sky Blue</option>
+          <option value="pink">Pink</option>
+          <option value="yellow">Yellow</option>
+          <option value="mustard">Mustard</option>
+          <option value="maroon">Maroon</option>
+          <option value="magenta">Magenta</option>
+          <option value="cyan">Cyan</option>
+          <option value="gray">Gray</option>
+          <option value="seagreen">Sea Green</option>
+          <option value="chocolate">Chocolate</option>
+          <option value="fuchsia">Fuchsia</option>
+          <option value="gold">Gold</option>
+          <option value="khaki">Khaki</option>
+          <option value="silver">Silver</option>
+    
+        </select>
+    
+        &nbsp;&nbsp;
+        Change Font Colour:
+        <select name="colors" onchange="fontColor(this.value)">
+          <!--Drop down list to change font color-->
+          <option value="">Choose a color</option>
+          <option value="Black">Black</option>
+          <option value="White">White</option>
+          <option value="gray">Gray</option>
+          <option value="red">Red</option>
+          <option value="orange">Orange</option>
+          <option value="yellow">Yellow</option>
+          <option value="seagreen">Sea Green</option>
+          <option value="blue">Blue</option>
+          <option value="purple">Purple</option>
+        </select>
+        </p>
+      </div>
+
+    <!-- Header -->
+    <div class="header">
+      <h1 id="yo">Image Grid</h1>
+    </div>
+
+    <!-- Photo Grid -->
+    <div class="row">
+      <div class="column">
+        <img data-modal-target="#img1" src="./images/humananatomy.jpg" style="width:100%">
+        <img data-modal-target="#img2" src="./images/botonical.jpg" style="width:100%">
+        <img data-modal-target="#img3" src="./images/microbiology.jpg" style="width:100%">
+        <img data-modal-target="#img4" src="./images/inorganic.jpg" style="width:100%">
+        <img data-modal-target="#img5" src="./images/robotics.jpg" style="width:100%">
+        <img data-modal-target="#img6" src="./images/electronics.jpg" style="width:100%">
+        <img data-modal-target="#img7" src="./images/environment.jpg" style="width:100%">
+      </div>
+
+      <div class="column">
+        <img data-modal-target="#img8" src="./images/mechanical.jpg" style="width:100%">
+        <img data-modal-target="#img9" src="./images/genetics.jpg" style="width:100%">
+        <img data-modal-target="#img10" src="./images/organicinorganic.jpg" style="width:100%">
+        <img data-modal-target="#img11" src="./images/focus-photo-of-camera-lens-752525.jpg" style="width:100%">
+        <img data-modal-target="#img12" src="./images/industrial.jpg" style="width:100%">
+        <img data-modal-target="#img13" src="./images/PHYSICALchem.jpg" style="width:100%">
+        <img data-modal-target="#img14" src="./images/zoology.jpg" style="width:100%">
+      </div>
+
+      <div id="pop-up"></div>
+
+      <div id="overlay"></div>
+
+
+
+      <!--footer-->
+      <div class="stu_pages" id="stu_pages">
+        <li><a href="../More/Physics/Physics.html" class="dropdown">Physics</a></li>
+        <li><a href="../More/Biology/Biology.html" class="dropdown">Biology</a></li>
+        <li><a href="../More/Chemistry/Chemistry.html" class="dropdown">Chemistry</a></li>
+        <li><a href="../More/Astronomy/Astronomy.html" class="dropdown">Atronomy</a></li>
+    </div>
+      <!-- <div class="inner_footer">
+        <div class="editor">
+          <h2 class="footer_headers">Editor</h2>
+          <div id="edited_by">
+            <div id="image">
+              <a href="../Editor/EditorHimasha.html"><img id="me" alt="editor image" src="himasha.jpg" /></a>
+            </div>
+            <div id="txt">
+              <span id="name">Himasha Gunasinghe</span>
+            </div>
+          </div>
+        </div>
+        <div class="sitemap">
+          <h2 class="footer_headers">Sitemap</h2>
+          <ul id="sitemap_list">
+            <li><i class="fa fa-angle-right"></i>&nbsp;&nbsp;<a href="../Home/navbar2.1.html">Home</a></li>
+            <li><i class="fa fa-angle-right"></i>&nbsp;&nbsp;<a href="../Products/Product.html">Products</a></li>
+            <li><i class="fa fa-angle-right"></i>&nbsp;&nbsp;<a href="../Reach Us/formupdatev2.0.html">Reach Us</a></li>
+            <li><i class="fa fa-angle-right"></i>&nbsp;&nbsp;<a href="../Quiz/new quiz 2.html">Quiz</a></li>
+            <li><i class="fa fa-angle-right"></i>&nbsp;&nbsp;<a href="../Site map/sitemap.html">Site Map</a></li>
+            <li><i class="fa fa-angle-right"></i>&nbsp;&nbsp;<a href="../Gallery/GALLERYCW.html
+              ">Gallery</a></li>
+            <li><i class="fa fa-angle-right"></i>&nbsp;&nbsp;<a href="../About Us/srudent details 2.html">About Us</a></li>
+          </ul>
+         </div>> 
+        <div class="aboutsite">
+          <h2 class="footer_headers">About Site</h2>
+          <p>This is a website we created for Web Design and Development Coursework. This prototype website implements
+            a
+            website where people can know about science, answer our quiz on facts and check out our image gallery.
+            Also
+            you can buy products.</p>
+        </div>
+        <div class="contactus">
+          <h2 class="footer_headers">Contact Us</h2>
+          <p>
+            <i class="fa fa-mobile" aria-hidden="true"></i>&nbsp; <a href="#">+9412345678</a>
+            <br>
+            <br>
+            <i class="fa fa-envelope" aria-hidden="true"></i>&nbsp; <a href="#">science.hsnl@gmail.com</a>
+          </p>
+        </div>
+      </div> -->
+
+      <div class="inner_footer">
+        <div class="editor">
+            <h2 class="footer_headers">Editor</h2>
+            <div id="edited_by">
+                <div id="image">
+                  <a href="../Editors/Editor Himasha.html" target="_blank"><img id="me" alt="editor image" src="himasha.jpg" /></a>
+                </div>
+                <div id="txt">
+                  <span id="name">Himasha Gunasinghe</span>
+                </div>
+            </div>
+        </div>
+        <div class="sitemap">
+            <h2 class="footer_headers">Sitemap</h2>
+            <ul id="sitemap_list">
+                <li><i class="fa fa-angle-right"></i>&nbsp;&nbsp;<a href="../Home/navbar2.1.html">Home</a></li>
+                <li><i class="fa fa-angle-right"></i>&nbsp;&nbsp;<a href="../Reach Us/formupdatev2.0.html">Reach Us</a></li>
+                <li><i class="fa fa-angle-right"></i>&nbsp;&nbsp;<a href="../Quiz/new quiz 2.html">Quiz</a></li>
+                <li><i class="fa fa-angle-right"></i>&nbsp;&nbsp;<a href="../Site Map/SitemapCW.html">Site Map</a></li>
+                <li><i class="fa fa-angle-right"></i>&nbsp;&nbsp;<a href="../Gallery/GALLERYCW.html">Gallery</a></li>
+                <li><i class="fa fa-angle-right"></i>&nbsp;&nbsp;<a href="../About Us/srudent details 2.html">About Us</a></li>
+            </ul>
+        </div>
+        <div class="aboutsite">
+            <h2 class="footer_headers">About Site</h2>
+            <p>This is a website we created for Web Design and Development Coursework. This prototype website implements a website where people can know about science, answer our quiz on facts and check out our image gallery. Also you can buy products.</p>
+        </div>
+        <div class="contactus">
+            <h2 class="footer_headers">Contact Us</h2>
+            <p>
+                <i class="fa fa-mobile" id="iconFooter" aria-hidden="true"></i>&nbsp; <a href="#">+9412345678</a>
+                <br>
+                <br>
+                <i class="fa fa-envelope" id="iconFooter" aria-hidden="true"></i>&nbsp; <a href="#">science.hsnl@gmail.com</a>
+            </p>
+        </div>
+    </div>
+
+      <script>
+               //adding image tittles.
+       const titles = ['Human Anatomy', 'Botanical Science','Micro Biology', 'Inorganic Chemistry', 'Robotics','Electronic and Electrical Physics','Environmental Science'
+        ,'Mechanical Physics','Genitical Biology','Organic Chemistry','Light','Industrial Chemistry','Physical Chemistry','Zoological Scienece']
+      
+       //adding descriptions.
+       const descriptions = ['Human anatomy is the study of the shape and form of the human body. The human body has four limbs (two arms and two legs), a head and a neck which connect to the torso. The body shape is determined by a strong skeleton made of bone and cartilage, surrounded by fat, muscle, connective tissue, organs, and other structures. The spine at the back of the skeleton contains the flexible vertebral column which surrounds the spinal cord, which is a collection of nerve fibres connecting the brain to the rest of the body. Nerves connect the spinal cord and brain to the rest of the body. All major bones, muscles, and nerves in the body are named, with the exception of anatomical variations such as sesamoid bones and accessory muscles. Blood vessels carry blood throughout the body, which moves because of the beating of the heart. Venules and veins collect blood low in oxygen from tissues throughout the body. These collect in progressively larger veins until they reach the body two largest veins, the superior and inferior vena cava, which drain blood into the right side of the heart. From here, the blood is pumped into the lungs where it receives oxygen and drains back into the left side of the heart. From here, it is pumped into the bodys largest artery, the aorta, and then progressively smaller arteries and arterioles until it reaches tissue. Here blood passes from small arteries into capillaries, then small veins and the process begins again. Blood carries oxygen, waste products, and hormones from one place in the body to another. Blood is filtered at the kidneys and liver.'
+       ,'Botany is the scientific study of plants. "Plants," to most people, means a wide range of living organisms from the smallest bacteria to the largest living things - the giant sequoia trees. By this definition plants include: algae, fungi, lichens, mosses, ferns, conifers and flowering plants',
+       'Microbiology is the study of microscopic organisms, such as bacteria, viruses, archaea, fungi and protozoa. This discipline includes fundamental research on the biochemistry, physiology, cell biology, ecology, evolution and clinical aspects of microorganisms, including the host response to these agents.',
+       'Inorganic chemistry deals with synthesis and behavior of inorganic and organometallic compounds. This field covers all chemical compounds except the myriad of organic compounds, which are the subjects of organic chemistry.',
+       'Robotics is an interdisciplinary research area at the interface of computer science and engineering. Robotics involves design, construction, operation, and use of robots. The goal of robotics is to design intelligent machines that can help and assist humans in their day-to-day lives and keep everyone safe.',
+       'Electrical engineering is an engineering discipline concerned with the study, design and application of equipment, devices and systems which use electricity, electronics, and electromagnetism. ',
+       'Environmental science is an interdisciplinary academic field that integrates physical, biological and information sciences to the study of the environment, and the solution of environmental problems. Environmental science emerged from the fields of natural history and medicine during the Enlightenment. ',
+       'Mechanical engineering is an engineering branch that combines engineering physics and mathematics principles with materials science to design, analyze, manufacture, and maintain mechanical systems. It is one of the oldest and broadest of the engineering branches.',
+       'Genetics is a branch of biology concerned with the study of genes, genetic variation, and heredity in organisms. Though heredity had been observed for millennia, Gregor Mendel, a scientist and Augustinian friar working in the 19th century, was the first to study genetics scientifically.',
+       'Organic chemistry is a branch of chemistry that studies the structure, properties and reactions of organic compounds, which contain carbon in covalent bonding. Study of structure determines their chemical composition and formula.',
+       'Light or visible light is electromagnetic radiation within the portion of the electromagnetic spectrum that can be perceived by the human eye. Visible light is usually defined as having wavelengths in the range of 400–700 nanometers, or 4.00 × 10⁻⁷ to 7.00 × 10⁻⁷ m, between the infrared and the ultraviolet',
+       'The chemical industry comprises the companies that produce industrial chemicals. Central to the modern world economy, it converts raw materials into more than 70,000 different products. The plastics industry contains some overlap, as most chemical companies produce plastic as well as other chemicals.',
+       'Physical chemistry is the study of macroscopic, and particulate phenomena in chemical systems in terms of the principles, practices, and concepts of physics such as motion, energy, force, time, thermodynamics, quantum chemistry, statistical mechanics, analytical dynamics and chemical equilibrium',
+       'Zoology is the branch of biology that studies the animal kingdom, including the structure, embryology, evolution, classification, habits, and distribution of all animals, both living and extinct, and how they interact with their ecosystems',]
+        
+        const imgs = ['humananatomy.jpg', 'botonical.jpg', 'microbiology.jpg', 'inorganic.jpg', 'robotics.jpg',
+          'electronics.jpg', 'environment.jpg',
+          'mechanical.jpg', 'genetics.jpg', 'organicinorganic.jpg', 'focus-photo-of-camera-lens-752525.jpg',
+          'industrial.jpg', 'PHYSICALchem.jpg', 'zoology.jpg'
+        ]
+
+        var popUpHTML = ""
+
+        for (i = 1; i <= 14; i++) {
+          popUpHTML = popUpHTML +
+            "<div class='modal' id='img" + i + "'> " +
+            "<div class='modal-header'> " +
+            "<div class='title'>" +
+            titles[i - 1] +
+            "</div> " +
+            "<button data-close-button class='close-button'> " +
+            " &times;" +
+            "</button>" +
+            "</div> " +
+            "<img class='modal-img' src='./images/" +
+            imgs[i - 1] +
+            "'>" +
+            "<div class='modal-body'> " +
+            descriptions[i - 1] +
+            "</div>" +
+            " </div>"
+        }
+
+        document.getElementById("pop-up").innerHTML = popUpHTML;
+
+
+        function changeColor(x) {
+          document.getElementById("full_body").style.backgroundColor = x;
+        }
+
+        function fontColor(x) {
+          document.getElementById("full_body").style.color = x;
+        }
+
+        const openModalButtons = document.querySelectorAll('[data-modal-target]')
+        const closeModalButtons = document.querySelectorAll('[data-close-button]')
+        const overlay = document.getElementById('overlay')
+
+        openModalButtons.forEach(button => {
+          button.addEventListener('click', () => {
+
+            const modal = document.querySelector(button.dataset.modalTarget)
+            openModal(modal)
+          })
+        })
+
+        overlay.addEventListener('click', () => {
+          const modals = document.querySelectorAll('.modal.active')
+          modals.forEach(modal => {
+            closeModal(modal)
+          })
+        })
+
+        closeModalButtons.forEach(button => {
+          button.addEventListener('click', () => {
+            const modal = button.closest('.modal')
+            closeModal(modal)
+          })
+        })
+
+        function openModal(modal) {
+          if (modal == null) return
+          console.log(modal)
+          modal.classList.add('active')
+          overlay.classList.add('active')
+        }
+
+        function closeModal(modal) {
+          if (modal == null) return
+          modal.classList.remove('active')
+          overlay.classList.remove('active')
+        }
+        var clicked = true;
+            var clicked2 = true;
+            function showdown(){
+                if(clicked){
+                    document.getElementById("stu_pages").style.display = "block";
+                    document.getElementById("downarrow").style.transform = "rotate(180deg)";
+                }
+                else{
+                    document.getElementById("stu_pages").style.display = "none";
+                    document.getElementById("downarrow").style.transform = "rotate(0deg)";
+                }
+                clicked = !clicked
+            }
+            function showdown2(){
+                if(clicked2){
+                    document.getElementById("font_btns").style.display = "block";
+                    document.getElementById("downarrow2").style.transform = "rotate(180deg)";
+                }
+                else{
+                    document.getElementById("font_btns").style.display = "none";
+                    document.getElementById("downarrow2").style.transform = "rotate(0deg)";
+                }
+                clicked2 = !clicked2
+            }
+      </script>
+    </div>
+</body>
+
+</html>

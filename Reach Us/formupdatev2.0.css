@@ -1,0 +1,326 @@
+*{
+    margin: 0;
+    font-family: "Poppins";
+}
+body{
+    background: linear-gradient(rgba(230, 217, 217, 0.5),rgba(5, 5, 5, 0.637)), url("../Images/nadunborder4.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    overflow-x: hidden;
+}
+.fullbody{
+    height: auto;
+}
+.navbar{
+    margin-top: 5px;
+    display: grid;
+    grid-template-columns: 20% 80%;
+}
+.navbar .logo{
+    float: left;
+}
+.logo img{
+    margin-left: 30px;
+    width: 150px;
+}
+#current{
+    color: yellow;
+}
+.links{
+    display: grid;
+    grid-template-columns: repeat(8,1fr);
+}
+.indi_links{
+    text-align: center;
+    padding-top: 16%;
+    vertical-align: middle;
+    /* margin-top: 18%; */
+}
+.indi_links a{
+    font-size: 130%;
+    font-weight: bold;
+    padding: 2%;
+    color: black;
+    /* margin-top: 2%; */
+    text-decoration: none;
+    /* border-bottom: yellow 2px solid; */
+}
+.bottum_line{
+    background-color: yellow;
+    height: 3px;
+    width: 0%;
+    margin: auto;
+    transition: 0.2s;
+}
+.indi_links a:hover .bottum_line{
+    width: 100%;
+}
+
+.stu_pages{
+    position: absolute ;
+    top: 58px;
+    left: 63%;
+    background-color: wheat;
+    height: 0%;
+    display: none;
+    z-index:2;
+    transition: 0.5s ;
+}
+.stu_pages a ,.font_btns a {
+    color: yellow;
+    text-decoration: none;
+}
+div > li{
+    list-style-type: none;
+}
+#downarrow ,#downarrow2{
+    color: yellow;
+    transition: 0.2s;
+}
+
+.font_btns{
+    position: absolute ;
+    top: 58px; 
+    right: 12%;
+    background-color: wheat;
+    height: 0%;
+    display: none;
+    z-index:2;
+    transition: 0.5s ;
+}
+
+#edited_by{
+    width: 15%;
+    color: yellow;
+    /* margin-top: 1%; */
+    display: grid;
+    grid-template-columns: 73% 112%;
+    font-size: 177%;
+    padding-top: 3%;
+    text-align: left;
+    margin-left: 3%;
+    padding-bottom: 3%;
+}
+#me{
+    width: 200%;
+    height: auto;
+    border-radius: 50%;
+    padding-right: 2%;
+}
+#name{
+    color: white;
+    font-size: 145%;
+}
+#txt{
+    /* color: white; */
+    font-size: 67%;
+    padding-top: 7%;
+    margin-left: -15%;
+}
+.footer{
+    /* position: absolute; */
+    top: 100%;
+    width: 100%;
+    height: auto;
+    background-color: rgba(58, 58, 53, 0.849);
+    text-align: right;
+}
+
+.footer h1{
+    position: relative;
+    top:20px;
+    right: 30px;
+    color: rgb(241, 241, 44);
+}
+#downarrow_menu1 , #downarrow_menu2{
+    display: none;
+}
+
+/* ////////form////////// */
+
+#form_heading{
+    color: yellow;
+    position: absolute;
+    top: 22%;
+    font-size: 73px;
+    text-align: center;
+    right: 8%;
+}
+#contact_us{
+    background-color: yellow;
+    height: 64px;
+    margin-left: -16px;
+    text-align: center;
+    margin-right: -16px;
+    padding-top: 5px;
+    font-size: 40px;
+}
+#formdiv{
+    background-color: #00000070;
+    position: relative;
+    width: 39%;
+    border-radius: 0%;
+    margin: 3% 0;
+    margin-left: 1%;
+    top: 2px;
+    padding: 24px 16 31px 16;    
+    left: 37px;
+}
+form label{
+    color: antiquewhite;
+    font-size : 17px;
+}
+#name , #email ,#comments
+{
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    color: rgb(255, 253, 253);
+    border-bottom: 2px solid rgba(128, 128, 128, 0.589);
+    resize: none;
+
+}
+
+.border{
+    border-bottom: 2px solid white;
+}
+input:focus ,textarea:focus{
+    outline: none;
+}
+input[type="checkbox"]{     /*enlarging the scheckboxes*/
+    transform: scale(1.5);
+}
+input[type="text"],input[type="email"],textarea
+{
+    font-size: 130%;
+    font-family: "Poppins";
+}
+label{
+    cursor:pointer;
+}
+.rating-text
+{
+    font-size: 130%;
+    cursor: pointer;
+    padding-right: 9px;
+    padding-left: 10px;
+}
+
+.rating
+{
+    margin-top: 25px;
+    text-align: center;
+}
+.submitdiv
+{
+    margin-top: 30px;
+    text-align: center;
+}
+#submit{       /*styling buttons*/
+    font-size: large;
+    background-color: transparent;
+    padding: 8px;
+    border: 2px solid rgb(150, 136, 136);
+    cursor: pointer;
+    transition: 0.2s;
+    margin-right: 45px;
+    color : antiquewhite;
+    font-family: "Poppins";
+}
+#reset
+{
+    color : antiquewhite;
+    font-size: large;
+    background-color: transparent;
+    padding: 8px;
+    border: 2px solid rgb(148, 147, 147);
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+    font-family: "Poppins";
+
+}
+#submit:hover ,#reset:hover{      /*button hover effects*/
+    transform: scale(1.2,1.2);
+    background-color: rgb(255, 255, 0);
+    border: 2px solid rgb(251, 255, 0);
+    color: black;
+}
+#ratequestion{
+    font-size: 150%;
+    color : antiquewhite;
+}
+
+/*footer*/
+
+.inner_footer{
+    display: grid;
+    grid-template-columns: 25% 18% 32% 24%;
+    grid-gap: 20px;
+    padding: 20px 30px 20px 20px;
+    background-color: rgba(58, 58, 53, 0.849);;
+}
+#sitemap_list {
+    list-style-type: none;
+    color: white;
+}
+#sitemap_list li:hover{
+    color: yellow;
+}
+li a:hover{
+    color: yellow;
+}
+.contactus{
+    margin-right: 45px;
+}
+.contactus p{
+    text-align: center;
+}
+p a{
+    color: white;
+}
+.footer_headers{
+    color: yellow;
+    padding: 17px;
+}
+.aboutsite p{
+    text-align: center;
+    padding: 0px 25px 25px 25px;
+    font-size: 17px;
+    color: white;
+}
+#txt{
+    color: black;
+    margin-left: 79%;
+    font-size: 22px;
+}
+#name{
+    color: white;
+    font-size: 110%;
+}
+li a{
+    color: white;
+    text-decoration: none;
+    margin-left: 1em;
+}
+#sizeNum{
+    padding-left: 30%;
+    font-size: 145%;
+}
+
+/* font-size-changer */
+#range{
+    margin-left: 12%;
+    margin-top: 5%;
+}
+#displaySize{
+    margin-left: 43%;
+    margin-top: 1%;
+}
+#displaySize{
+    color: white;
+}
+
+
+/*There may be some css that won't have any effect on the page*/

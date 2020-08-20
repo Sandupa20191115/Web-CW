@@ -1,0 +1,216 @@
+<html>
+    <html lang="en"></html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Science | Buy Products</title>
+        <link rel="stylesheet" href="Product-css.css">
+        <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+        <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+        <script src="Product-javascript.js"></script>
+        <script src="Product-font-sizs.js"></script>
+        <link rel = "icon" href = "Images/logomini.png" type = "image/icon type"/>
+    </head>
+    <body>
+        <div class="fullbody">
+            <div class="navbar"> <!--Navigation bar-->
+                <div class="logo">
+                    <a href="../Home/navbar2.1.html"><img src="../Images/logo2.2.png" alt="logo"></a>
+                </div>
+                <div class="links" id="links">
+                    <div class="indi_links"><a href="Product.html" id="yellow"><span class="vertical_line"></span>Products<div class="bottum_line"></div></a></div>
+                    <div class="indi_links"><a href="../Reach Us/formupdatev2.0.html"><span class="vertical_line"></span>Reach Us<div class="bottum_line"></div></a></div>
+                    <div class="indi_links"><a href="../Quiz/new quiz 2.html"><span class="vertical_line"></span>Quiz<div class="bottum_line"></div></a></div>
+                    <div class="indi_links"><a href="../Site Map/SitemapCW.html"><span class="vertical_line"></span>Site Map<div class="bottum_line"></div></a></div>
+                    <div class="indi_links"><a href="#" onclick="showdown()"><span class="vertical_line"></span>More&nbsp;&nbsp;<i class='fas fa-angle-down' id="downarrow"></i></a></div>
+                    <div class="indi_links"><a href="../Gallery/GALLERYCW.html"><span class="vertical_line"></span>Gallery<div class="bottum_line"></div></a></div>
+                    <div class="indi_links"><a href="#" onclick="showdown2()"><span class="vertical_line"></span>Font Size&nbsp;&nbsp;<i class='fas fa-angle-down' id="downarrow2"></i></a></div>
+                    <div class="indi_links"><a href="../About Us/srudent details 2.html"><span class="vertical_line"></span>About Us<div class="bottum_line"></div></a></div>
+                </div>
+            </div>
+
+            <div id="produt_container"> <!--Contain Product Divs-->
+                <div class="products"> <!-- Product div -->
+                    <img class="product-image" src="../Images/Microscope.png" alt="Microscope image"> <!--Produt image (Microscope)-->
+                    <div class="details-box">
+                        <p class="product-name">Microscope</p>  <!--Produt Name (Microscope)-->
+                        <p class="product-price">$<span class="without$">210.00</span></p>  <!--Produt Price (Microscope)-->
+                        <button class="order-product-button" onclick="display_product_card(0)">Order</button> <!--Order Microscope button-->
+                    </div>
+                </div>
+        
+                <div class="products">
+                    <img class="product-image" src="../Images/Deluxe Lab Hot Plate with Magnetic Stirrer.png" alt="Deluxe Lab Hot Plate with Magnetic Stirrer image"> <!--Produt image (Deluxe Lab Hot Plate with Magnetic Stirrer)-->
+                    <div class="details-box">
+                        <p class="product-name">Deluxe Lab Hot Plate with Magnetic Stirrer</p> <!--Produt image (Deluxe Lab Hot Plate with Magnetic Stirrer)-->
+                        <p class="product-price">$<span class="without$">195.95</span></p> <!--Produt image (Deluxe Lab Hot Plate with Magnetic Stirrer)-->
+                        <button class="order-product-button" onclick="display_product_card(1)">Order</button> <!--Order Deluxe Lab Hot Plate with Magnetic Stirrer button-->
+                    </div>
+                </div>
+        
+                <div class="products">
+                    <img class="product-image" src="../Images/Digital Caliper.png" alt="Digital Caliper image"> <!--Produt image (Digital Caliper)-->
+                    <div class="details-box">
+                        <p class="product-name">Digital Caliper</p> <!--Produt image (Digital Caliper)-->
+                        <p class="product-price">$<span class="without$">24.50</span></p> <!--Produt image (Digital Caliper)-->
+                        <button class="order-product-button" onclick="display_product_card(2)">Order</button> <!--Order Digital Caliper button-->
+                    </div>
+                </div>
+        
+                <div class="products">
+                    <img class="product-image" src="../Images/Friction on an Inclined Plane.png" alt="Friction on an Inclined Plane image"> <!--Produt image (Friction on an Inclined Plane)-->
+                    <div class="details-box">
+                        <p class="product-name">Friction on an Inclined Plane</p> <!--Produt image (Friction on an Inclined Plane)-->
+                        <p class="product-price">$<span class="without$">34.00</span></p> <!--Produt image (Friction on an Inclined Plane)-->
+                        <button class="order-product-button" onclick="display_product_card(3)">Order</button> <!--Order Friction on an Inclined Plane button-->
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="subject_cards"> <!--Product details-->
+                <p class="product-discription"> <!--Microscope Discription-->
+                    Enhance your professional pursuits or hobbies using the Barksa AY13180 Binocular Stereo Microscope. 
+                    This tool provides two independent optical paths (one for each eye) for stereoscopic viewing with 20-40x 
+                    zoom magnification that is ideal for studying minerals, gems, insects, electronic boards, fabrics, or collectibles.
+                </p>
+
+                <p class="product-discription"> <!--Deluxe Lab Hot Plate with Magnetic Stirrer Discription-->
+                    This economical laboratory hot plate includes an integrated magnetic stirrer. 
+                    Safer than an alcohol lamp or burner (since there's no open flame), this hot plate stirrer 
+                    mixes and heats at once. The magnetic stirrer spins at up to 1600 rpm, mixing liquids easily.
+                </p>
+
+                <p class="product-discription"> <!--Digital Caliper Discription-->
+                    This 6" digital caliper with LCD screen makes fast, easy work of precision measurements. 
+                    It measures outside or inside dimensions up to 150mm or 6". Readability of the digital 
+                    caliper is 0.01mm or 0.001". Accuracy is 0.02mm or 0.001". The digital caliper has a bright 
+                    easy-to-read LCD display and push buttons for on/off, inch/mm selection, and zero. It includes 
+                    a locking/tension screw. This digital caliper is powered by one LR44 battery, included.
+                </p>
+
+                <p class="product-discription"> <!--Friction on an Inclined Plane Discription-->
+                    Study the friction between two surfaces and the forces on an inclined plane. 
+                    Set the inclined plane at any angle between 0 and 45°. The included hanging pan holds the desired weight. 
+                    Two wooden boards of different sizes and a metal plate are included. Students can determine the coefficient
+                    of static friction and the coefficient of sliding friction as well as verify the normal and frictional 
+                    components of the force exerted by the plane. An instruction and experiment manual is included.
+                </p>
+            </div>
+
+
+            <div id="disply-card">  <!--Display order prodcut-->
+                <div class="image-card">    <!--Display order product image-->
+                    <img src="" alt="Order Image">    <!--Product image-->
+                    <div id="image-box-content">
+                        <p class="image-title"></p> <!--Product title on image-->
+                        <p class="image-discription"></p>   <!--Product discription on image-->
+                        <p class="image-price"></p> <!--Set Product price-->
+                    </div>
+                </div>
+                <div class="form-card">     <!--Display form-->
+                    <form> <!--Customer details form-->
+                        <button type="reset" id="close-cross" onclick="display_discription()">&#x2716</button>  <!--Close Display Order Product With Resetting Form-->
+                        <p id="just-say-hello">Just Say Hello!</p>
+                        <p id="let-us-about-you">Let Us More About You</p>
+
+                        <div class="form-elements">
+                            <label for="fname"><i class="fas fa-user"></i>  Name:</label><br>
+                            <input type="text" name="name" id="fname">
+                        </div>
+                        
+                        <div class="form-elements">
+                            <label for="femail"><i class="fas fa-envelope"></i>  E-mail:</label><br>
+                            <input type="email" name="email" id="femail">
+                        </div>
+
+                        <div class="form-elements">
+                            <label for="fphone"><i class="fas fa-phone"></i> Phone:</label><br>
+                            <input type="text" name="phoneno" id="fphone">
+                        </div>
+                        
+                        <div class="form-elements">
+                            <label for="fNoOfQuantity"><i class="fas fa-clipboard-list"></i>  Number Of Quantity:</label><br>
+                            <input type="number" name="quantityno" min="0" max="15" id="fNoOfQuantity">
+                        </div>
+
+                        <div class="form-elements">
+                            <label for="faddress"><i class="fas fa-map-marker-alt"></i>  Address:</label><br>
+                            <textarea id="faddress"></textarea>
+                        </div>
+                    </form>
+                    <div class="buy-product-button-div">
+                        <button class="buy-product-button" onclick="buy_button()">Buy</button>  <!--Buy product button-->
+                    </div>
+                </div>
+            </div>
+        
+            
+            <!--Part of nevbar-->
+            <div id="yo" style="background-color: aqua; width: 100%;"></div>
+            <div class="stu_pages" id="stu_pages">
+                <li><a href="../More/Physics/Physics.html" class="dropdown">Physics</a></li>
+                <li><a href="../More/Biology/biology.html" class="dropdown">Biology</a></li>
+                <li><a href="../More/Chemistry/Chemistry.html" class="dropdown">Chemistry</a></li>
+                <li><a href="../More/Astronomy/Astronomy.html" class="dropdown">Atronomy</a></li>
+            </div>
+            <div class="font_btns" id="font_btns">
+                <input type="range" min="80" max="150" value="100" onmousemove="fontChange()" id="range"> 
+                <p id="displaySize">100%</p> 
+            </div>
+            <div class="inner_footer">
+                <div class="editor">
+                  <h2 class="footer_headers">Editor</h2>
+                  <div id="edited_by">
+                    <div id="image">
+                      <a href="../Editors/Editor Nadun.html" target="_blank"><img id="me" alt="editor image" src="../Images/nadun.jpeg" /></a>
+                    </div>
+                    <div id="txt">
+                      <span id="name">Nadun Imantha</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="sitemap">
+                  <h2 class="footer_headers">Sitemap</h2>
+                  <ul id="sitemap_list">
+                    <li><i class="fa fa-angle-right"></i>&nbsp;&nbsp;<a href="../Home/navbar2.1.html">Home</a></li>
+                    <li><i class="fa fa-angle-right"></i>&nbsp;&nbsp;<a href="../Reach Us/formupdatev2.0.html">Reach Us</a></li>
+                    <li><i class="fa fa-angle-right"></i>&nbsp;&nbsp;<a href="../Quiz/new quiz 2.html">Quiz</a></li>
+                    <li><i class="fa fa-angle-right"></i>&nbsp;&nbsp;<a href="../Site Map/SitemapCW.html">Site Map</a></li>
+                    <li><i class="fa fa-angle-right"></i>&nbsp;&nbsp;<a href="../Gallery/GALLERYCW.html">Gallery</a></li>
+                    <li><i class="fa fa-angle-right"></i>&nbsp;&nbsp;<a href="../About Us/srudent details 2.html">About Us</a></li>
+                  </ul>
+                </div>
+                <div class="aboutsite">
+                  <h2 class="footer_headers">About Site</h2>
+                  <p>This is a website we created for Web Design and Development Coursework. This prototype website implements a
+                    website where people can know about science, answer our quiz on facts and check out our image gallery. Also
+                    you can buy products.</p>
+                </div>
+                <div class="contactus">
+                  <h2 class="footer_headers">Contact Us</h2>
+                  <p>
+                    <i class="fa fa-mobile" aria-hidden="true"></i>&nbsp; <a href="#">+9412345678</a>
+                    <br>
+                    <br>
+                    <i class="fa fa-envelope" aria-hidden="true"></i>&nbsp; <a href="#">science.hsnl@gmail.com</a>
+                  </p>
+                </div>
+              </div>
+
+        </div>
+
+        <!--Popup message-->
+        <div class="popup-box-div">
+            <div id="popup-box"> <!--popup div-->
+                <div id="popup-content"> <!--Popup div content-->
+                    <span id="hey">Hey <span id="customer_name"></span>,</span>
+                    <button id="close-popup-button" onclick="close_popup()">&#x2716</button> <!--Popup close button-->
+                    <p id="popup-summary"></p> <!--Popup message details-->
+                </div>
+            </div>
+        </div>
+
+        <div class="overlayer"></div> <!--Block content behind  popup div-->
+
+    </body>
+</html>

@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link rel="icon" href="../Images/logomini.png" type="image/icon type" />
+    <link rel="stylesheet" href="ne quiz 2 css.css">
+    <link rel="stylesheet" href="navbar2.1.css">
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+
+    <title>Science | Quiz</title>
+</head>
+
+<body>
+    <div class="fullbody">
+        <div class="navbar">
+            <div class="logo">
+                <a href="../Home/navbar2.1.html"><img src="../Images/logo2.3.png"></a>
+            </div>
+            <div class="links" id="links">
+                <div class="indi_links"><a href="../Products/Product.html">Products<div class="bottum_line"></div></a></div>
+                <div class="indi_links"><a href="../Reach Us/formupdatev2.0.html">Reach Us<div class="bottum_line"></div></a></div>
+                <div class="indi_links"><a href="../Quiz/new quiz 2.html">Quiz<div class="bottum_line"></div></a></div>
+                <div class="indi_links"><a href="../Site Map/SitemapCW.html">Site Map<div class="bottum_line"></div></a></div>
+                <div class="indi_links"><a href="#" onclick="showdown()" id="others">More&nbsp;&nbsp;<i class='fas fa-angle-down' id="downarrow"></i></a></div>
+                <div class="indi_links"><a href="../Gallery/GALLERYCW.html">Gallery<div class="bottum_line"></div></a></div>
+                <!-- <div class="indi_links"><a href="#" onclick="showdown2()">Font Size&nbsp;&nbsp;<i class='fas fa-angle-down' id="downarrow2"></i></a></div> -->
+                <div class="indi_links"><a href="../About Us/srudent details 2.html">About Us<div class="bottum_line"></div></a></div>
+            </div>
+        </div>
+
+
+        <div id="QuizBox">
+            <div id="center001">
+                <p id="timer"></p>
+                <p id="text1"></p>
+                <p id="text2"></p>
+                <p id="text3"></p>
+                <p id="text4"></p>
+                <p id="text5"></p>
+                <p id="text6"></p>
+                <br>
+                <div id="divSummary">
+                    <br>
+                    <p id="summary0"></p>
+                    <p id="summary1"></p>
+                    <p id="summary2"></p>
+                    <p id="summary3"></p>
+                    <p id="summary4"></p>
+                    <p id="summary5"></p>
+                    <p id="summary6"></p>
+                    <p id="summary7"></p>
+                    <p id="summary8"></p>
+                    <p id="summary9"></p>
+                    <p id="summary10"></p>
+                </div>
+                <br>
+                <p id="click"></p>
+            </div>
+        </div>
+        <div class="stu_pages" id="stu_pages">
+            <li><a href="../More/Physics/Physics.html" class="dropdown">Physics</a></li>
+            <li><a href="../More/Biology/Biology.html" class="dropdown">Biology</a></li>
+            <li><a href="../More/Chemistry/Chemistry.html" class="dropdown">Chemistry</a></li>
+            <li><a href="../More/Astronomy/Astronomy.html" class="dropdown">Atronomy</a></li>
+        </div>
+
+        <div class="font_btns" id="font_btns">
+            <input type="range" min="80" max="300" value="100" onmousemove="fontChange()" id="range">
+            <p id="displaySize">100%</p>
+        </div>
+
+        <div class="inner_footer">
+            <div class="editor">
+                <h2 class="footer_headers">Editor</h2>
+                <div id="edited_by">
+                    <div id="image">
+                        <a href="../Editors/Editor Lahiru.html" target="_blank"><img id="me" alt="editor image" src="../Images/Lahiru.jpg" /></a>
+
+                    </div>
+                    <div id="txt">
+                        <span id="name">Lahiru Punchihewa</span>
+                    </div>
+                </div>
+            </div>
+            <div class="sitemap">
+                <h2 class="footer_headers">Sitemap</h2>
+                <ul id="sitemap_list">
+                    <li><i class="fa fa-angle-right"></i>&nbsp;&nbsp;<a href="../Home/navbar2.1.html">Home</a></li>
+                    <li><i class="fa fa-angle-right"></i>&nbsp;&nbsp;<a href="../Products/Product.html">Products</a></li>
+                    <li><i class="fa fa-angle-right"></i>&nbsp;&nbsp;<a href="../Reach Us/formupdatev2.0.html">Reach Us</a></li>
+                    <li><i class="fa fa-angle-right"></i>&nbsp;&nbsp;<a href="../Quiz/new quiz 2.html">Quiz</a></li>
+                    <li><i class="fa fa-angle-right"></i>&nbsp;&nbsp;<a href="../Site Map/SitemapCW.html">Site Map</a></li>
+                    <li><i class="fa fa-angle-right"></i>&nbsp;&nbsp;<a href="../Gallery/GALLERYCW.html">Gallery</a></li>
+                    <li><i class="fa fa-angle-right"></i>&nbsp;&nbsp;<a href="../About Us/srudent details 2.html">About Us</a></li>
+                </ul>
+            </div>
+            <div class="aboutsite">
+                <h2 class="footer_headers">About Site</h2>
+                <p>This is a website we created for Web Design and Development Coursework. This prototype website implements a website where people can know about science, answer our quiz on facts and check out our image gallery. Also you can buy products.</p>
+            </div>
+            <div class="contactus">
+                <h2 class="footer_headers">Contact Us</h2>
+                <p>
+                    <i class="fa fa-mobile" aria-hidden="true"></i>&nbsp; <a href="#">+9412345678</a>
+                    <br>
+                    <br>
+                    <i class="fa fa-envelope" aria-hidden="true"></i>&nbsp; <a href="#">science.hsnl@gmail.com</a>
+                </p>
+            </div>
+        </div>
+    </div>
+    <script src="new quiz 2 JS.js">
+    </script>
+
+    <script>
+        var clicked = true;
+        var clicked2 = true;
+
+        function showdown() {
+            if (clicked) {
+                document.getElementById("stu_pages").style.display = "block";
+                document.getElementById("downarrow").style.transform = "rotate(180deg)";
+            } else {
+                document.getElementById("stu_pages").style.display = "none";
+                document.getElementById("downarrow").style.transform = "rotate(0deg)";
+            }
+            clicked = !clicked
+        }
+
+        function showdown2() {
+            if (clicked2) {
+                document.getElementById("font_btns").style.display = "block";
+                document.getElementById("downarrow2").style.transform = "rotate(180deg)";
+            } else {
+                document.getElementById("font_btns").style.display = "none";
+                document.getElementById("downarrow2").style.transform = "rotate(0deg)";
+            }
+            clicked2 = !clicked2
+        }
+
+        function menuhide() {
+            document.getElementById("links").style.right = "-200px";
+            document.getElementById("bars").style.opacity = "1";
+        }
+
+        function menushow() {
+            document.getElementById("links").style.right = "0px";
+            document.getElementById("bars").style.disply = "0";
+        }
+    </script>
+</body>
+
+</html>

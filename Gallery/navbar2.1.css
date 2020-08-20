@@ -1,0 +1,380 @@
+*{
+    margin: 0;
+    font-family: "Poppins";
+}
+body{
+    /* background: linear-gradient(rgba(230, 217, 217, 0.5),rgba(5, 5, 5, 0.637)), url("nadunborder4.jpg"); */
+    background-color: gray;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    overflow-x: hidden;
+}
+.fullbody{
+    height: auto;
+}
+.navbar{
+    z-index: 100;
+    margin-top: 7px;
+    display: grid;
+    grid-template-columns: 20% 80%;
+    padding-top: -2%;
+    top: -2%;
+    margin-bottom: 16%;
+}
+.navbar .logo{
+    float: left;
+}
+.logo a img{
+    margin-left: 30px;
+    width: 150px;
+}
+.links{
+    display: grid;
+    grid-template-columns: repeat(7,1fr);
+}
+.indi_links{
+    text-align: center;
+    padding-top: 16%;
+    vertical-align: middle;
+}
+.indi_links a{
+    font-size: 130%;
+    font-weight: bold;
+    padding: 2%;
+    color: black;
+    text-decoration: none;
+}
+.bottum_line{
+    background-color: yellow;
+    height: 3px;
+    width: 0%;
+    margin: auto;
+    transition: 0.2s;
+}
+.indi_links a:hover .bottum_line{
+    width: 100%;
+}
+.stu_pages{
+    position: absolute;
+    top: 64px;
+    left: 69%;
+    background-color: wheat;
+    height: 0%;
+    display: none;
+    z-index: 2;
+    transition: 0.5s;
+}
+.stu_pages a ,.font_btns a {
+    color: yellow;
+    text-decoration: none;
+}
+div > li{
+    list-style-type: none;
+}
+#downarrow ,#downarrow2{
+    color: yellow;
+    transition: 0.2s;
+}
+
+.font_btns{
+    position: absolute ;
+    top: 64px; 
+    right: 11%;
+    background-color: wheat;
+    height: 0%;
+    display: none;
+    z-index:2;
+    transition: 0.5s ;
+}
+#edited_by{
+    width: 15%;
+    color: yellow;
+    display: grid;
+    grid-template-columns: 73% 112%;
+    font-size: 177%;
+    padding-top: 3%;
+    margin-left: 3%;
+    padding-bottom: 3%;
+}
+#me{
+    width: 200%;
+    border-radius: 50%;
+    font-size: 67%;
+    padding-top: 7%;
+    margin-left: -15%;
+}
+hr{
+    position: absolute;
+    background-color: yellow;
+    z-index: 50;
+    top: -11%;
+    left: 48%;
+    height: 4px;
+    width: 39px;
+    margin: auto;
+    border: none;
+}
+
+#downarrow_menu1 , #downarrow_menu2{
+    display: none;
+}
+.subject_cards{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-auto-rows: 400px;
+}
+.card{
+    text-align: left;
+    background-color: black;
+    margin: 23px;
+    transition: 0.5s ease-in-out;
+}
+.card_h{
+    font-size: 280%;
+    transition: 0.2s;
+}
+.inner_txt{
+    color: white;
+    top: -22%;
+    position: relative;
+    left: 5%;
+    transition: 0.2s;
+}
+.card_image{
+    width: 100%;
+    height: 100%;
+    opacity: .8;
+    transition: .2s;
+}
+.inner_quote{
+    transform: scale(0,0);
+    transition: 0.1s;
+    position: relative;
+    top: -49vh;
+    color: aliceblue;
+    font-size: 19px;
+    text-align: center;
+    padding: 4%;
+}
+.card_author{
+    color: yellow;
+    font-style: italic;
+}
+.card:hover .card_image{
+    opacity: .4;
+}
+.card:hover .inner_quote{
+    transform: scale(1,1);
+}
+.card:hover .card_h{
+    transform: scale(0,0);
+}
+
+
+/*Footerrrrrrrrrrrrrrrrrrrrrrrrrrrrr*/
+
+.inner_footer{
+    position: absolute;
+    bottom: -660%;
+    display: grid;
+    grid-template-columns: 25% 18% 32% 24%;
+    grid-gap: 20px;
+    padding: 20px 30px 20px 20px;
+    background-color: rgba(58, 58, 53, 0.849);;
+}
+#sitemap_list {
+    list-style-type: none;
+    color: white;
+}
+#sitemap_list li:hover{
+    color: yellow;
+}
+li a:hover{
+    color: yellow;
+}
+.contactus{
+    margin-right: 45px;
+}
+.contactus p{
+    text-align: center;
+}
+p a{
+    color: white;
+}
+.footer_headers{
+    color: yellow;
+    padding: 17px;
+}
+.aboutsite p{
+    text-align: center;
+    padding: 0px 25px 25px 25px;
+    font-size: 17px;
+    color: white;
+}
+#txt{
+    color: black;
+    margin-left: 79%;
+    font-size: 22px;
+}
+#name{
+    color: white;
+    font-size: 110%;
+}
+li a{
+    color: white;
+    text-decoration: none;
+    margin-left: 1em;
+}
+#sizeNum{
+    padding-left: 30%;
+    font-size: 145%;
+}
+
+
+/* /////////////////grid///////////////// */
+
+.quote{
+    box-sizing: border-box;
+}
+
+.header {
+    text-align: center;
+    padding: 32px;
+  }
+  
+  /* Create two equal columns that floats next to each other */
+  .column {
+    float: left;
+    width: 50%;
+    padding: 10px;
+  }
+  
+  .column img {
+    margin-top: 12px;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  *, *::after, *::before {
+    box-sizing: border-box;
+  }
+
+  #change{
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      text-align: center;
+      margin-top: -15%;
+  }
+ 
+  /*css of popup images*/ 
+  /* * {
+    box-sizing: border-box;
+}
+ */
+/* body {
+    margin: 0;
+    font-family: Arial;
+} */
+
+.header {
+    text-align: center;
+    padding: 32px;
+}
+
+/* Create two equal columns that floats next to each other */
+.column {
+    float: left;
+    width: 50%;
+    padding: 10px;
+}
+
+.column img {
+    margin-top: 12px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+*,
+*::after,
+*::before {
+     box-sizing: border-box;
+}
+
+.modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: 200ms ease-in-out;
+    border: 1px solid black;
+    border-radius: 10px;
+    z-index: 10;
+    background-color: white;
+    width: 500px;
+    max-width: 80%;
+}
+
+.modal.active {
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.modal-header {
+    padding: 10px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid black;
+}
+
+.modal-header .title {
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.modal-header .close-button {
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background: none;
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.modal-img {
+    width:80%;
+}
+
+.modal-body {
+    padding: 10px 15px;
+}
+
+#overlay {
+    position: fixed;
+    opacity: 0;
+    transition: 200ms ease-in-out;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, .5);
+    pointer-events: none;
+}
+
+#overlay.active {
+    opacity: 1;
+    pointer-events: all;
+} 
+
